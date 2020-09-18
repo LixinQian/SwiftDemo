@@ -10,6 +10,7 @@
 		09B03878D8E62E5A07FE81F7 /* Pods_SwiftDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9505D4C6FD7A0E11FC5357 /* Pods_SwiftDemoUITests.framework */; };
 		12F1BBC83F434CA296DD61CF /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DE19A4AA590FEDD005941F /* Pods_SwiftDemo.framework */; };
 		6BB9509C952732229DAB67C3 /* Pods_SwiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3695B293C861DC753F130CF2 /* Pods_SwiftDemoTests.framework */; };
+		99C4809E2514C3BD00884C01 /* live.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 99C4809D2514C3BD00884C01 /* live.mp3 */; };
 		BF6AE73E2512767F00D171E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AE73D2512767F00D171E3 /* AppDelegate.swift */; };
 		BF6AE7402512767F00D171E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AE73F2512767F00D171E3 /* SceneDelegate.swift */; };
 		BF6AE7422512767F00D171E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AE7412512767F00D171E3 /* ViewController.swift */; };
@@ -50,6 +51,7 @@
 		6BED9BEBA99D358DA45F3E3B /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7D9505D4C6FD7A0E11FC5357 /* Pods_SwiftDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC996F0AB08932F8975D62A /* Pods-SwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemoTests/Pods-SwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		99C4809D2514C3BD00884C01 /* live.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = live.mp3; sourceTree = "<group>"; };
 		BB59709E53AB66A20BB87672 /* Pods-SwiftDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemoTests/Pods-SwiftDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF6AE73A2512767F00D171E3 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6AE73D2512767F00D171E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 		BF6AE77325136E2100D171E3 /* Day6 */ = {
 			isa = PBXGroup;
 			children = (
+				99C4809D2514C3BD00884C01 /* live.mp3 */,
 				BF6AE77F25137FD500D171E3 /* PlayLocalVideo.swift */,
 			);
 			path = Day6;
@@ -345,6 +348,7 @@
 			files = (
 				BF6AE74A2512768000D171E3 /* LaunchScreen.storyboard in Resources */,
 				BF6AE7472512768000D171E3 /* Assets.xcassets in Resources */,
+				99C4809E2514C3BD00884C01 /* live.mp3 in Resources */,
 				BF6AE7452512767F00D171E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
