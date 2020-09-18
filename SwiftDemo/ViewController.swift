@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let arr = ["ShowFont","WatchVC","FindMyPosition","LimitInputTextField","PullToRefresh","PlayLocalVideo",]
+    let arr = ["ShowFont", "WatchVC", "FindMyPosition", "LimitInputTextField", "PullToRefresh", "PlayLocalVideo"]
     var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -48,4 +48,3 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
 
 }
-

@@ -9,7 +9,7 @@
 import UIKit
 
 class ShowFont: UIViewController {
-    var arr: Array<String> = []
+    var arr = [String]()
     let label = UILabel()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +22,11 @@ class ShowFont: UIViewController {
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 20)
         view.addSubview(label)
-        
-        
+
         let btn = UIButton(frame: CGRect(x: 100, y: 400, width: 150, height: 70))
         btn.setTitle("改变字体", for: .normal)
         btn.setTitleColor(.red, for: .normal)
-        btn.addTarget(self, action:#selector(changeFontFamily), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(changeFontFamily), for: .touchUpInside)
         view.addSubview(btn)
         btn.layer.borderColor = UIColor.blue.cgColor
         btn.layer.borderWidth = 1
@@ -38,7 +37,7 @@ class ShowFont: UIViewController {
 
     @objc func changeFontFamily() {
         let index = Int.random(in: 0...arr.count)
-        label.font = UIFont(name:arr[index] , size: 20)
+        label.font = UIFont(name: arr[index], size: 20)
     }
     
     func printAllSupportedFontNames() {

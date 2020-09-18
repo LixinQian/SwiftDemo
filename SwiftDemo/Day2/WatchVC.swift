@@ -10,11 +10,10 @@ import UIKit
 import SnapKit
 
 class WatchVC: UIViewController {
-    
+
     var result: UILabel!
     var timer: Timer?
     var lableNum: Double = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +22,7 @@ class WatchVC: UIViewController {
         result.textAlignment = .center
         result.text = "0"
         result.font = UIFont.systemFont(ofSize: 25)
-        result.backgroundColor = .white
+        result.backgroundColor = .brown
         view.addSubview(result)
         result.snp.makeConstraints { (make) in
             make.right.left.equalToSuperview()
@@ -42,8 +41,7 @@ class WatchVC: UIViewController {
             make.top.equalTo(result.snp.bottom)
             make.width.equalTo(view.frame.width / 2)
         }
-        
-        
+
         let endBtn: UIButton = UIButton()
         endBtn.setTitle("停止", for: .normal)
         endBtn.backgroundColor = UIColor(red: 98/255.0, green: 242/255.0, blue: 23/255.0, alpha: 1)
@@ -55,7 +53,7 @@ class WatchVC: UIViewController {
             make.top.equalTo(result.snp.bottom)
             make.width.equalTo(view.frame.width / 2)
         }
-        
+
         let resetButton = UIButton()
         view.addSubview(resetButton)
         resetButton.snp.makeConstraints { (make) in
@@ -73,7 +71,7 @@ class WatchVC: UIViewController {
         if timer != nil {
             end()
         }
-        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (Timer) in
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { _ in
             self.lableNum += 0.1
             self.result.text = String(format: "%.1f", self.lableNum)
         })

@@ -1,0 +1,53 @@
+disabled_rules: # 执行时排除掉的规则（禁用指定的规则）
+  #- colon
+  #- comma
+  - control_statement
+  - trailing_whitespace   # 每一个空行不能有空格，会与Xcode换行后自动对齐生成的空格冲突，建议排除掉
+  - line_length   #单行代码长度
+  - force_cast  #直接强解类型
+  - unused_optional_binding  #在使用if判断某变量是否为nil的时候, 使用下划线(_)
+opt_in_rules: # 一些规则仅仅是可选的
+  - empty_count
+  - missing_docs
+  # 可以通过执行如下指令来查找所有可用的规则:
+  # swiftlint rules
+included: # 执行 linting 时包含的路径。如果出现这个 `--path` 会被忽略。
+#  - Source #项目需要忽略这个文件内容是，需要修改改文件名称
+excluded: # 执行 linting 时忽略的路径。 优先级比 `included` 更高。
+  - Carthage
+  - Pods
+  - Source/ExcludedFolder
+  - Source/ExcludedFile.swift
+
+# 可配置的规则可以通过这个配置文件来自定义
+
+#force_cast: warning # 隐式
+force_try:
+  severity: warning # 显式
+
+#line_length: 200   #单行代码长度
+
+#type_body_length:
+#  - 300 # warning
+#  - 400 # error
+
+file_length:  #文件长度
+  warning: 600
+  error: 1200
+# 命名规则可以设置最小长度和最大程度的警告/错误
+# 此外它们也可以设置排除在外的名字
+type_name:
+  min_length: 3 # 只是警告
+  max_length: # 警告和错误
+    warning: 40
+    error: 50
+  excluded: iPhone # 排除某个名字
+
+identifier_name:
+  min_length: 2 # 只有最小长度
+  max_length: 40
+  excluded: # 排除某些名字
+    - id
+    - URL
+    - GlobalAPIKey
+reporter: "xcode" # 报告类型 (xcode, json, csv, checkstyle)
