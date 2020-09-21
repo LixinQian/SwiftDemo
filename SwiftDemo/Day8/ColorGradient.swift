@@ -43,7 +43,7 @@ class ColorGradient: UIViewController, CAAnimationDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.createGradientLayer()
+        createGradientLayer()
         
         timeLabel = UILabel(frame: CGRect(x: 50, y: 140, width: 100, height: 100))
         timeLabel.text = "1:00"
@@ -76,13 +76,13 @@ class ColorGradient: UIViewController, CAAnimationDelegate {
 
     var lastY: CGFloat = 0.0, lastTotalIndex = 0, deltaOrigin = 0, indexForUp = 0
     @objc func handelPanGesture(sender: UIPanGestureRecognizer) {
-        let velocity = sender.velocity(in: self.view)
-        let tranY = sender.translation(in: self.view).y
+        let velocity = sender.velocity(in: view)
+        let tranY = sender.translation(in: view).y
         if lastY == 0 || tranY * lastY < 0 {
             lastY = tranY
             lastTotalIndex = totalIndex
         }
-        let scopeY = self.view.frame.height / 24.0
+        let scopeY = view.frame.height / 24.0
 //        time ++ up to down
         if velocity.y > 0 && totalIndex < 23 {
             totalIndex = Int((tranY - lastY) /  scopeY)

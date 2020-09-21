@@ -19,14 +19,14 @@ extension String {
         guard (hasPrefix("#") && count == 7) ||
             (hasPrefix("0x") && count == 8) ||
             (count == 6) else {
-                return UIColor.red
+                return .red
         }
         
         var origin = self
         
-        if (self.hasPrefix("#")) {
+        if (hasPrefix("#")) {
             origin = origin[1..<count]
-        } else if (self.hasPrefix("0x")) {
+        } else if (hasPrefix("0x")) {
             origin = origin[2..<count]
         }
         

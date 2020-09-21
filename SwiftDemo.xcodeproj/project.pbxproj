@@ -16,6 +16,21 @@
 		BF549BA32517AAA8009B3EAD /* SwipeableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF549BA22517AAA8009B3EAD /* SwipeableCell.swift */; };
 		BF60A4C02517ADE800DCCCAD /* fetchSubString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4BE2517ADE800DCCCAD /* fetchSubString.swift */; };
 		BF60A4C12517ADE800DCCCAD /* HexStringColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4BF2517ADE800DCCCAD /* HexStringColor.swift */; };
+		BF60A4C3251888B900DCCCAD /* StretchyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4C2251888B900DCCCAD /* StretchyHeader.swift */; };
+		BF60A4C52518EC1900DCCCAD /* GradientInTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4C42518EC1900DCCCAD /* GradientInTableView.swift */; };
+		BF60A4C72518EC4D00DCCCAD /* EmojiSlotMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4C62518EC4D00DCCCAD /* EmojiSlotMachine.swift */; };
+		BF60A4C92518EC7900DCCCAD /* AnimationInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4C82518EC7900DCCCAD /* AnimationInTableViewCell.swift */; };
+		BF60A4CB2518EC9800DCCCAD /* VideoSplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4CA2518EC9800DCCCAD /* VideoSplash.swift */; };
+		BF60A4CD2518ECAE00DCCCAD /* TumblrMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4CC2518ECAE00DCCCAD /* TumblrMenu.swift */; };
+		BF60A4CF2518ECC100DCCCAD /* LoginAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4CE2518ECC100DCCCAD /* LoginAnimation.swift */; };
+		BF60A4D12518ECE000DCCCAD /* ThreeDTouchQuickAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4D02518ECE000DCCCAD /* ThreeDTouchQuickAction.swift */; };
+		BF60A4D32518ECFD00DCCCAD /* SpotlightSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4D22518ECFD00DCCCAD /* SpotlightSearch.swift */; };
+		BF60A4DD2518F40C00DCCCAD /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BF60A4DC2518F40C00DCCCAD /* moments.mp4 */; };
+		BF60A4E32518F41A00DCCCAD /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4E12518F41A00DCCCAD /* VideoSplashViewController.swift */; };
+		BF60A4E42518F41A00DCCCAD /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4E22518F41A00DCCCAD /* VideoCutter.swift */; };
+		BF60A4E92518F5AF00DCCCAD /* Tumblr Menu.gif in Resources */ = {isa = PBXBuildFile; fileRef = BF60A4E82518F5AF00DCCCAD /* Tumblr Menu.gif */; };
+		BF60A4EE2518F62100DCCCAD /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4ED2518F62100DCCCAD /* CustomButton.swift */; };
+		BF60A4F62518F76B00DCCCAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4F52518F76B00DCCCAD /* LoginViewController.swift */; };
 		BF6AE73E2512767F00D171E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AE73D2512767F00D171E3 /* AppDelegate.swift */; };
 		BF6AE7402512767F00D171E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AE73F2512767F00D171E3 /* SceneDelegate.swift */; };
 		BF6AE7422512767F00D171E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AE7412512767F00D171E3 /* ViewController.swift */; };
@@ -63,6 +78,21 @@
 		BF549BA22517AAA8009B3EAD /* SwipeableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCell.swift; sourceTree = "<group>"; };
 		BF60A4BE2517ADE800DCCCAD /* fetchSubString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fetchSubString.swift; sourceTree = "<group>"; };
 		BF60A4BF2517ADE800DCCCAD /* HexStringColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexStringColor.swift; sourceTree = "<group>"; };
+		BF60A4C2251888B900DCCCAD /* StretchyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeader.swift; sourceTree = "<group>"; };
+		BF60A4C42518EC1900DCCCAD /* GradientInTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientInTableView.swift; sourceTree = "<group>"; };
+		BF60A4C62518EC4D00DCCCAD /* EmojiSlotMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSlotMachine.swift; sourceTree = "<group>"; };
+		BF60A4C82518EC7900DCCCAD /* AnimationInTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationInTableViewCell.swift; sourceTree = "<group>"; };
+		BF60A4CA2518EC9800DCCCAD /* VideoSplash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSplash.swift; sourceTree = "<group>"; };
+		BF60A4CC2518ECAE00DCCCAD /* TumblrMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrMenu.swift; sourceTree = "<group>"; };
+		BF60A4CE2518ECC100DCCCAD /* LoginAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAnimation.swift; sourceTree = "<group>"; };
+		BF60A4D02518ECE000DCCCAD /* ThreeDTouchQuickAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDTouchQuickAction.swift; sourceTree = "<group>"; };
+		BF60A4D22518ECFD00DCCCAD /* SpotlightSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightSearch.swift; sourceTree = "<group>"; };
+		BF60A4DC2518F40C00DCCCAD /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
+		BF60A4E12518F41A00DCCCAD /* VideoSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSplashViewController.swift; sourceTree = "<group>"; };
+		BF60A4E22518F41A00DCCCAD /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCutter.swift; sourceTree = "<group>"; };
+		BF60A4E82518F5AF00DCCCAD /* Tumblr Menu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Tumblr Menu.gif"; sourceTree = "<group>"; };
+		BF60A4ED2518F62100DCCCAD /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		BF60A4F52518F76B00DCCCAD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BF6AE73A2512767F00D171E3 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6AE73D2512767F00D171E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF6AE73F2512767F00D171E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +197,7 @@
 		BF549B912517A667009B3EAD /* Day10 */ = {
 			isa = PBXGroup;
 			children = (
+				BF60A4C2251888B900DCCCAD /* StretchyHeader.swift */,
 			);
 			path = Day10;
 			sourceTree = "<group>";
@@ -174,6 +205,7 @@
 		BF549B922517A66E009B3EAD /* Day11 */ = {
 			isa = PBXGroup;
 			children = (
+				BF60A4C42518EC1900DCCCAD /* GradientInTableView.swift */,
 			);
 			path = Day11;
 			sourceTree = "<group>";
@@ -181,6 +213,9 @@
 		BF549B932517AA16009B3EAD /* Day15 */ = {
 			isa = PBXGroup;
 			children = (
+				BF60A4E82518F5AF00DCCCAD /* Tumblr Menu.gif */,
+				BF60A4ED2518F62100DCCCAD /* CustomButton.swift */,
+				BF60A4CC2518ECAE00DCCCAD /* TumblrMenu.swift */,
 			);
 			name = Day15;
 			path = SwiftDemo/Day15;
@@ -189,6 +224,8 @@
 		BF549B942517AA16009B3EAD /* Day16 */ = {
 			isa = PBXGroup;
 			children = (
+				BF60A4F52518F76B00DCCCAD /* LoginViewController.swift */,
+				BF60A4CE2518ECC100DCCCAD /* LoginAnimation.swift */,
 			);
 			name = Day16;
 			path = SwiftDemo/Day16;
@@ -197,6 +234,10 @@
 		BF549B952517AA16009B3EAD /* Day14 */ = {
 			isa = PBXGroup;
 			children = (
+				BF60A4DC2518F40C00DCCCAD /* moments.mp4 */,
+				BF60A4E22518F41A00DCCCAD /* VideoCutter.swift */,
+				BF60A4E12518F41A00DCCCAD /* VideoSplashViewController.swift */,
+				BF60A4CA2518EC9800DCCCAD /* VideoSplash.swift */,
 			);
 			name = Day14;
 			path = SwiftDemo/Day14;
@@ -205,6 +246,7 @@
 		BF549B962517AA16009B3EAD /* Day17 */ = {
 			isa = PBXGroup;
 			children = (
+				BF60A4D02518ECE000DCCCAD /* ThreeDTouchQuickAction.swift */,
 			);
 			name = Day17;
 			path = SwiftDemo/Day17;
@@ -213,6 +255,7 @@
 		BF549B972517AA16009B3EAD /* Day13 */ = {
 			isa = PBXGroup;
 			children = (
+				BF60A4C82518EC7900DCCCAD /* AnimationInTableViewCell.swift */,
 			);
 			name = Day13;
 			path = SwiftDemo/Day13;
@@ -229,6 +272,7 @@
 		BF549B992517AA16009B3EAD /* Day18 */ = {
 			isa = PBXGroup;
 			children = (
+				BF60A4D22518ECFD00DCCCAD /* SpotlightSearch.swift */,
 			);
 			name = Day18;
 			path = SwiftDemo/Day18;
@@ -253,6 +297,7 @@
 		BF549B9C2517AA16009B3EAD /* Day12 */ = {
 			isa = PBXGroup;
 			children = (
+				BF60A4C62518EC4D00DCCCAD /* EmojiSlotMachine.swift */,
 			);
 			name = Day12;
 			path = SwiftDemo/Day12;
@@ -504,6 +549,8 @@
 				BF6AE7472512768000D171E3 /* Assets.xcassets in Resources */,
 				99C4809E2514C3BD00884C01 /* live.mp3 in Resources */,
 				BF6AE7452512767F00D171E3 /* Main.storyboard in Resources */,
+				BF60A4E92518F5AF00DCCCAD /* Tumblr Menu.gif in Resources */,
+				BF60A4DD2518F40C00DCCCAD /* moments.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,19 +678,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF60A4F62518F76B00DCCCAD /* LoginViewController.swift in Sources */,
+				BF60A4EE2518F62100DCCCAD /* CustomButton.swift in Sources */,
+				BF60A4E42518F41A00DCCCAD /* VideoCutter.swift in Sources */,
+				BF60A4D12518ECE000DCCCAD /* ThreeDTouchQuickAction.swift in Sources */,
 				BF6AE77825136EB500D171E3 /* WatchVC.swift in Sources */,
 				BF6AE7422512767F00D171E3 /* ViewController.swift in Sources */,
 				BF6AE78025137FD500D171E3 /* PlayLocalVideo.swift in Sources */,
 				BF6AE76F251276E800D171E3 /* ShowFont.swift in Sources */,
 				BF60A4C12517ADE800DCCCAD /* HexStringColor.swift in Sources */,
+				BF60A4C3251888B900DCCCAD /* StretchyHeader.swift in Sources */,
 				BF60A4C02517ADE800DCCCAD /* fetchSubString.swift in Sources */,
 				BF549BA12517AA92009B3EAD /* ColorGradient.swift in Sources */,
 				BF6AE73E2512767F00D171E3 /* AppDelegate.swift in Sources */,
 				BF6AE7402512767F00D171E3 /* SceneDelegate.swift in Sources */,
+				BF60A4E32518F41A00DCCCAD /* VideoSplashViewController.swift in Sources */,
+				BF60A4CD2518ECAE00DCCCAD /* TumblrMenu.swift in Sources */,
 				BF549BA32517AAA8009B3EAD /* SwipeableCell.swift in Sources */,
+				BF60A4C92518EC7900DCCCAD /* AnimationInTableViewCell.swift in Sources */,
+				BF60A4C72518EC4D00DCCCAD /* EmojiSlotMachine.swift in Sources */,
 				BF6AE77E25137FB500D171E3 /* PullToRefresh.swift in Sources */,
+				BF60A4C52518EC1900DCCCAD /* GradientInTableView.swift in Sources */,
+				BF60A4CF2518ECC100DCCCAD /* LoginAnimation.swift in Sources */,
 				BF549B9F2517AA78009B3EAD /* SimplePhotoBrowser.swift in Sources */,
+				BF60A4D32518ECFD00DCCCAD /* SpotlightSearch.swift in Sources */,
 				BF6AE77A25137F5F00D171E3 /* FindMyPosition.swift in Sources */,
+				BF60A4CB2518EC9800DCCCAD /* VideoSplash.swift in Sources */,
 				BF6AE77C25137F8D00D171E3 /* LimitInputTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

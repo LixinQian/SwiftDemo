@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let arr = ["ShowFont", "WatchVC", "FindMyPosition", "LimitInputTextField", "PullToRefresh", "PlayLocalVideo", "SimplePhotoBrowser", "ColorGradient", "SwipeableCell"]
+    let arr = ["ShowFont", "WatchVC", "FindMyPosition", "LimitInputTextField", "PullToRefresh", "PlayLocalVideo", "SimplePhotoBrowser", "ColorGradient", "SwipeableCell", "StretchyHeader", "GradientInTableView", "EmojiSlotMachine", "AnimationInTableViewCell", "VideoSplash", "TumblrMenu", "LoginAnimation", "ThreeDTouchQuickAction", "SpotlightSearch"]
     var tableView: UITableView!
     
     override func viewDidLoad() {
