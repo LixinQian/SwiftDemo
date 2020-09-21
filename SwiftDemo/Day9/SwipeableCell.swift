@@ -30,18 +30,13 @@ class SwipeableCell: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        key1: reload Data here
         table.reloadData()
-//        key2: do the animation in ViewwillApear,not in delegate "willDisplay", that will case reuse cell problem!
         let cells = table.visibleCells
         let tableHeight: CGFloat = table.bounds.size.height
         
         for (index, cell) in cells.enumerated() {
-//            use origin.y or CGAffineTransform and set y has same effect!
-//            cell.transform = CGAffineTransform(translationX: 0, y: tableHeight)
             cell.frame.origin.y = tableHeight
             UIView.animate(withDuration: 1.0, delay: 0.04 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
-//                cell.transform = CGAffineTransform(translationX: 0, y: 0);
                 cell.frame.origin.y = 0
             }, completion: nil)
         }
@@ -70,10 +65,10 @@ class SwipeableCell: UIViewController, UITableViewDelegate, UITableViewDataSourc
         let bgView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: cellHeight))
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = bgView.frame
-        let lowerColor:CGColor = UIColor(red: (CGFloat(indexPath.row * 2) * colorRatio)/255.0, green: 1.0, blue: (CGFloat(indexPath.row * 2) * colorRatio)/255.0, alpha: 1).cgColor
-        let upperColor:CGColor = UIColor(red: (CGFloat(indexPath.row * 2) * colorRatio + colorRatio)/255.0, green: 1.0, blue: (CGFloat(indexPath.row * 2) * colorRatio + colorRatio)/255.0, alpha: 1).cgColor
+        let lowerColor: CGColor = UIColor(red: (CGFloat(indexPath.row * 2) * colorRatio)/255.0, green: 1.0, blue: (CGFloat(indexPath.row * 2) * colorRatio)/255.0, alpha: 1).cgColor
+        let upperColor: CGColor = UIColor(red: (CGFloat(indexPath.row * 2) * colorRatio + colorRatio)/255.0, green: 1.0, blue: (CGFloat(indexPath.row * 2) * colorRatio + colorRatio)/255.0, alpha: 1).cgColor
 
-        gradientLayer.colors = [lowerColor,upperColor]
+        gradientLayer.colors = [lowerColor, upperColor]
         bgView.layer.addSublayer(gradientLayer)
         cell.addSubview(bgView)
         cell.sendSubviewToBack(bgView)
@@ -83,33 +78,54 @@ class SwipeableCell: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return cell
     }
     
-//    todo find how to auto fold the accessory when clicking the actino in button
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let likeAction = UITableViewRowAction(style: .normal, title: "👍") { action, index in
-            self.actionController.message = "Thanks for your Love😸"
-            self.showAlertController()
-            print("delete")
-        }
-        likeAction.backgroundColor = UIColor.white
-        let dislikeAction = UITableViewRowAction(style: .default, title: "👎") { action, index in
-            self.actionController.message = "Tell me why!!!😤"
-            self.showAlertController()
-            print("done")
-        }
-        dislikeAction.backgroundColor = UIColor.white
-        
-        let unknowAction = UITableViewRowAction(style: .destructive, title: "🖖") { (action, index) in
-            self.actionController.message = "What do you mean? 🤔"
-            self.showAlertController()
-            print("what?")
-        }
-        unknowAction.backgroundColor = UIColor.white
-        return [likeAction, dislikeAction,unknowAction]
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let likeAction = UIContextualAction(style: .normal, title: "👍") { (_, _, comlpete) in
+         self.actionController.message = "Thanks for your Love😸"
+         self.showAlertController()
+         comlpete(true)
+         }
+         
+         let dislikeAction = UIContextualAction(style: .normal, title: "👎") { (_, _, comlpete) in
+             self.actionController.message = "Tell me why!!!😤"
+             self.showAlertController()
+             comlpete(true)
+          }
+         
+         let unknowAction = UIContextualAction(style: .normal, title: "🖖") { (_, _, comlpete) in
+             self.actionController.message = "What do you mean? 🤔"
+             self.showAlertController()
+             comlpete(true)
+          }
+         
+       return UISwipeActionsConfiguration(actions: [likeAction, dislikeAction, unknowAction])
     }
     
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+       let likeAction = UIContextualAction(style: .normal, title: "👍") { (_, _, comlpete) in
+        self.actionController.message = "Thanks for your Love😸"
+        self.showAlertController()
+        comlpete(true)
+        }
+        
+        let dislikeAction = UIContextualAction(style: .normal, title: "👎") { (_, _, comlpete) in
+            self.actionController.message = "Tell me why!!!😤"
+            self.showAlertController()
+            comlpete(true)
+         }
+        
+        let unknowAction = UIContextualAction(style: .normal, title: "🖖") { (_, _, comlpete) in
+            self.actionController.message = "What do you mean? 🤔"
+            self.showAlertController()
+            comlpete(true)
+         }
+        
+      return UISwipeActionsConfiguration(actions: [likeAction, dislikeAction, unknowAction])
+    }
+
     func showAlertController() {
         self.present(self.actionController, animated: true, completion: {
-            let dismissTimer = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false, block: { (timer) in
+            let dismissTimer = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false, block: { _ in
                 self.actionController.dismiss(animated: true, completion: nil)
             })
             RunLoop.main.add(dismissTimer, forMode: RunLoop.Mode.common)

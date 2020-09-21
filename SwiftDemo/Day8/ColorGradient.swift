@@ -45,13 +45,13 @@ class ColorGradient: UIViewController, CAAnimationDelegate {
         super.viewWillAppear(animated)
         self.createGradientLayer()
         
-        timeLabel = UILabel(frame: CGRect(x: 50, y: 40, width: 100, height: 100))
+        timeLabel = UILabel(frame: CGRect(x: 50, y: 140, width: 100, height: 100))
         timeLabel.text = "1:00"
         timeLabel.textColor = .white
         timeLabel.font = UIFont.systemFont(ofSize: 28)
         view.addSubview(timeLabel)
         
-        temperatureLabel = UILabel(frame: CGRect(x: 250, y: 40, width: 100, height: 100))
+        temperatureLabel = UILabel(frame: CGRect(x: 250, y: 140, width: 100, height: 100))
         temperatureLabel.text = "18 ℃"
         temperatureLabel.textColor = .white
         temperatureLabel.font = UIFont.systemFont(ofSize: 28)

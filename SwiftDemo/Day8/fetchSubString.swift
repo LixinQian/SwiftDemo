@@ -10,7 +10,7 @@ import Foundation
 
 // support fetching subString by subscribe
 extension String {
-    subscript (range:Range<Int>) -> String {
+    subscript (range: Range<Int>) -> String {
         let startIndex = self.index(self.startIndex, offsetBy: range.lowerBound)
         let endIndex = self.index(self.startIndex, offsetBy: range.upperBound)
         return String(self[startIndex..<endIndex])

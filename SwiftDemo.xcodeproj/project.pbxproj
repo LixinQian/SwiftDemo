@@ -10,12 +10,12 @@
 		09B03878D8E62E5A07FE81F7 /* Pods_SwiftDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9505D4C6FD7A0E11FC5357 /* Pods_SwiftDemoUITests.framework */; };
 		12F1BBC83F434CA296DD61CF /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DE19A4AA590FEDD005941F /* Pods_SwiftDemo.framework */; };
 		6BB9509C952732229DAB67C3 /* Pods_SwiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3695B293C861DC753F130CF2 /* Pods_SwiftDemoTests.framework */; };
+		99C4809E2514C3BD00884C01 /* live.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 99C4809D2514C3BD00884C01 /* live.mp3 */; };
 		BF549B9F2517AA78009B3EAD /* SimplePhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF549B9E2517AA78009B3EAD /* SimplePhotoBrowser.swift */; };
 		BF549BA12517AA92009B3EAD /* ColorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF549BA02517AA92009B3EAD /* ColorGradient.swift */; };
 		BF549BA32517AAA8009B3EAD /* SwipeableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF549BA22517AAA8009B3EAD /* SwipeableCell.swift */; };
 		BF60A4C02517ADE800DCCCAD /* fetchSubString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4BE2517ADE800DCCCAD /* fetchSubString.swift */; };
 		BF60A4C12517ADE800DCCCAD /* HexStringColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4BF2517ADE800DCCCAD /* HexStringColor.swift */; };
-		99C4809E2514C3BD00884C01 /* live.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 99C4809D2514C3BD00884C01 /* live.mp3 */; };
 		BF6AE73E2512767F00D171E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AE73D2512767F00D171E3 /* AppDelegate.swift */; };
 		BF6AE7402512767F00D171E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AE73F2512767F00D171E3 /* SceneDelegate.swift */; };
 		BF6AE7422512767F00D171E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AE7412512767F00D171E3 /* ViewController.swift */; };
