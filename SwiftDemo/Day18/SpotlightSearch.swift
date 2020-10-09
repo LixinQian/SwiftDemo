@@ -21,6 +21,7 @@ class SpotlightSearch: UIViewController, UITableViewDelegate, UITableViewDataSou
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         table.delegate = self
         table.dataSource = self
         view.addSubview(table)

@@ -12,7 +12,7 @@ import SnapKit
 class LimitInputTextField: UIViewController, UITextViewDelegate {
 
     var limitedTextView: UITextView!
-var allowInputNumberlabel: UILabel!
+    var allowInputNumberlabel: UILabel!
     let maxTextSize = 140
 
     override func viewDidLoad() {
@@ -44,7 +44,7 @@ var allowInputNumberlabel: UILabel!
     }
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        if text.isEmpty { return true}
+        if text.isEmpty { return true }
         
         let selectedRange = textView.markedTextRange
             if let selectedRange = selectedRange {
@@ -69,7 +69,7 @@ var allowInputNumberlabel: UILabel!
         }
 
             // 在其他位置添加
-        guard textView.text.count >= maxTextSize  && range.length <  text.count else {
+        guard textView.text.count < maxTextSize  && range.length <  text.count else {
             return false
 
         }
@@ -87,7 +87,7 @@ var allowInputNumberlabel: UILabel!
                         return
                     }
                 }
-                textView.text = String(textView.text.prefix(140))
+                textView.text = String(textView.text.prefix(maxTextSize))
 
                 // 对于粘贴文字的case，粘贴结束后若超出字数限制，则让光标移动到末尾处
                 textView.selectedRange = NSRange(location: textView.text.count, length: 0)
