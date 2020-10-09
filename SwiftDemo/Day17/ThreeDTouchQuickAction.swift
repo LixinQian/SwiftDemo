@@ -9,7 +9,7 @@
 import UIKit
 import SafariServices
 
-class ThreeDTouchQuickAction: UIViewController, UIViewControllerPreviewingDelegate {
+class ThreeDTouchQuickAction: UIViewController, UIViewControllerPreviewingDelegate, UIContextMenuInteractionDelegate {
     
     var actionLabel: UILabel!
     override func viewDidLoad() {
@@ -25,8 +25,12 @@ class ThreeDTouchQuickAction: UIViewController, UIViewControllerPreviewingDelega
         fingerPrintImageView.image = UIImage(named: "fingerprint")
         view.addSubview(fingerPrintImageView)
         fingerPrintImageView.center = view.center
-        
-        registerForPreviewing(with: self, sourceView: view)
+        if #available(iOS 13.0, *) {
+           let menuInteraction = UIContextMenuInteraction(delegate: self)
+            view.addInteraction(menuInteraction)
+        } else {
+            registerForPreviewing(with: self, sourceView: view)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +47,13 @@ class ThreeDTouchQuickAction: UIViewController, UIViewControllerPreviewingDelega
         if shortcutItem.type == "LoveItem" {
             changeLabel(with: "Yes, I do ❤️ you!")
         }
+    }
+    
+    func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration? {
+        return UIContextMenuConfiguration(identifier: nil) { () -> UIViewController? in
+            SFSafariViewController(url: NSURL(string: "http://www.qq.com")! as URL)
+        }
+
     }
     
     //MARK: UIViewControllerPreviewingDelegate

@@ -31,6 +31,7 @@
 		BF60A4E92518F5AF00DCCCAD /* Tumblr Menu.gif in Resources */ = {isa = PBXBuildFile; fileRef = BF60A4E82518F5AF00DCCCAD /* Tumblr Menu.gif */; };
 		BF60A4EE2518F62100DCCCAD /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4ED2518F62100DCCCAD /* CustomButton.swift */; };
 		BF60A4F62518F76B00DCCCAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4F52518F76B00DCCCAD /* LoginViewController.swift */; };
+		BF60A4FB2519C57100DCCCAD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A4FA2519C57100DCCCAD /* DetailViewController.swift */; };
 		BF6AE73E2512767F00D171E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AE73D2512767F00D171E3 /* AppDelegate.swift */; };
 		BF6AE7402512767F00D171E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AE73F2512767F00D171E3 /* SceneDelegate.swift */; };
 		BF6AE7422512767F00D171E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AE7412512767F00D171E3 /* ViewController.swift */; };
@@ -93,6 +94,7 @@
 		BF60A4E82518F5AF00DCCCAD /* Tumblr Menu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Tumblr Menu.gif"; sourceTree = "<group>"; };
 		BF60A4ED2518F62100DCCCAD /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		BF60A4F52518F76B00DCCCAD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BF60A4FA2519C57100DCCCAD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BF6AE73A2512767F00D171E3 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6AE73D2512767F00D171E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF6AE73F2512767F00D171E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				BF60A4D22518ECFD00DCCCAD /* SpotlightSearch.swift */,
+				BF60A4FA2519C57100DCCCAD /* DetailViewController.swift */,
 			);
 			name = Day18;
 			path = SwiftDemo/Day18;
@@ -705,6 +708,7 @@
 				BF6AE77A25137F5F00D171E3 /* FindMyPosition.swift in Sources */,
 				BF60A4CB2518EC9800DCCCAD /* VideoSplash.swift in Sources */,
 				BF6AE77C25137F8D00D171E3 /* LimitInputTextField.swift in Sources */,
+				BF60A4FB2519C57100DCCCAD /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
