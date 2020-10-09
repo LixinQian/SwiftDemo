@@ -11,6 +11,10 @@
 		12F1BBC83F434CA296DD61CF /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DE19A4AA590FEDD005941F /* Pods_SwiftDemo.framework */; };
 		6BB9509C952732229DAB67C3 /* Pods_SwiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3695B293C861DC753F130CF2 /* Pods_SwiftDemoTests.framework */; };
 		99C4809E2514C3BD00884C01 /* live.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 99C4809D2514C3BD00884C01 /* live.mp3 */; };
+		BF408E72253067C700599C47 /* ToDayWidgetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF408E71253067C700599C47 /* ToDayWidgetVC.swift */; };
+		BF408E772530680200599C47 /* BaseAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF408E762530680200599C47 /* BaseAnimations.swift */; };
+		BF408E7C2530682600599C47 /* SideNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF408E7B2530682600599C47 /* SideNavigation.swift */; };
+		BF408E812530685200599C47 /* VerticalMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF408E802530685200599C47 /* VerticalMenuTransition.swift */; };
 		BF549B9F2517AA78009B3EAD /* SimplePhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF549B9E2517AA78009B3EAD /* SimplePhotoBrowser.swift */; };
 		BF549BA12517AA92009B3EAD /* ColorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF549BA02517AA92009B3EAD /* ColorGradient.swift */; };
 		BF549BA32517AAA8009B3EAD /* SwipeableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF549BA22517AAA8009B3EAD /* SwipeableCell.swift */; };
@@ -74,6 +78,10 @@
 		8DC996F0AB08932F8975D62A /* Pods-SwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemoTests/Pods-SwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		99C4809D2514C3BD00884C01 /* live.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = live.mp3; sourceTree = "<group>"; };
 		BB59709E53AB66A20BB87672 /* Pods-SwiftDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemoTests/Pods-SwiftDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF408E71253067C700599C47 /* ToDayWidgetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDayWidgetVC.swift; sourceTree = "<group>"; };
+		BF408E762530680200599C47 /* BaseAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAnimations.swift; sourceTree = "<group>"; };
+		BF408E7B2530682600599C47 /* SideNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNavigation.swift; sourceTree = "<group>"; };
+		BF408E802530685200599C47 /* VerticalMenuTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalMenuTransition.swift; sourceTree = "<group>"; };
 		BF549B9E2517AA78009B3EAD /* SimplePhotoBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePhotoBrowser.swift; sourceTree = "<group>"; };
 		BF549BA02517AA92009B3EAD /* ColorGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGradient.swift; sourceTree = "<group>"; };
 		BF549BA22517AAA8009B3EAD /* SwipeableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCell.swift; sourceTree = "<group>"; };
@@ -266,6 +274,7 @@
 		BF549B982517AA16009B3EAD /* Day21 */ = {
 			isa = PBXGroup;
 			children = (
+				BF408E7B2530682600599C47 /* SideNavigation.swift */,
 			);
 			name = Day21;
 			path = SwiftDemo/Day21;
@@ -284,6 +293,7 @@
 		BF549B9A2517AA16009B3EAD /* Day19 */ = {
 			isa = PBXGroup;
 			children = (
+				BF408E71253067C700599C47 /* ToDayWidgetVC.swift */,
 			);
 			name = Day19;
 			path = SwiftDemo/Day19;
@@ -292,6 +302,7 @@
 		BF549B9B2517AA16009B3EAD /* Day22 */ = {
 			isa = PBXGroup;
 			children = (
+				BF408E802530685200599C47 /* VerticalMenuTransition.swift */,
 			);
 			name = Day22;
 			path = SwiftDemo/Day22;
@@ -309,6 +320,7 @@
 		BF549B9D2517AA16009B3EAD /* Day20 */ = {
 			isa = PBXGroup;
 			children = (
+				BF408E762530680200599C47 /* BaseAnimations.swift */,
 			);
 			name = Day20;
 			path = SwiftDemo/Day20;
@@ -698,15 +710,19 @@
 				BF60A4E32518F41A00DCCCAD /* VideoSplashViewController.swift in Sources */,
 				BF60A4CD2518ECAE00DCCCAD /* TumblrMenu.swift in Sources */,
 				BF549BA32517AAA8009B3EAD /* SwipeableCell.swift in Sources */,
+				BF408E812530685200599C47 /* VerticalMenuTransition.swift in Sources */,
+				BF408E772530680200599C47 /* BaseAnimations.swift in Sources */,
 				BF60A4C92518EC7900DCCCAD /* AnimationInTableViewCell.swift in Sources */,
 				BF60A4C72518EC4D00DCCCAD /* EmojiSlotMachine.swift in Sources */,
 				BF6AE77E25137FB500D171E3 /* PullToRefresh.swift in Sources */,
 				BF60A4C52518EC1900DCCCAD /* GradientInTableView.swift in Sources */,
 				BF60A4CF2518ECC100DCCCAD /* LoginAnimation.swift in Sources */,
+				BF408E72253067C700599C47 /* ToDayWidgetVC.swift in Sources */,
 				BF549B9F2517AA78009B3EAD /* SimplePhotoBrowser.swift in Sources */,
 				BF60A4D32518ECFD00DCCCAD /* SpotlightSearch.swift in Sources */,
 				BF6AE77A25137F5F00D171E3 /* FindMyPosition.swift in Sources */,
 				BF60A4CB2518EC9800DCCCAD /* VideoSplash.swift in Sources */,
+				BF408E7C2530682600599C47 /* SideNavigation.swift in Sources */,
 				BF6AE77C25137F8D00D171E3 /* LimitInputTextField.swift in Sources */,
 				BF60A4FB2519C57100DCCCAD /* DetailViewController.swift in Sources */,
 			);
