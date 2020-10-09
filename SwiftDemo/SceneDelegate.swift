@@ -11,6 +11,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    public let notificationName = NSNotification.Name.init("receivedIdFromSpotlightSearch")
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -46,5 +47,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-    
+
+    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+        let identifier = userActivity.userInfo?["kCSSearchableItemActivityIdentifier"] as! String
+        NotificationCenter.default.post(name: notificationName, object: self, userInfo: ["id": identifier])
+    }
 }

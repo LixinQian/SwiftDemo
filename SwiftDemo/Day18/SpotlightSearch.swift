@@ -25,7 +25,6 @@ class SpotlightSearch: UIViewController, UITableViewDelegate, UITableViewDataSou
         table.delegate = self
         table.dataSource = self
         view.addSubview(table)
-        
         CSSearchableIndex.default().deleteAllSearchableItems { _ in
             print("delete all")
         }
@@ -55,13 +54,21 @@ class SpotlightSearch: UIViewController, UITableViewDelegate, UITableViewDataSou
         
         let attributSet = CSSearchableItemAttributeSet(itemContentType: "test")
         attributSet.title = itemDic["name"] as? String
+        attributSet.displayName = itemDic["name"] as? String
+        attributSet.keywords = ["\(indexPath.row)"]
+        attributSet.path = "\(indexPath.row)"
+        attributSet.alternateNames = [ attributSet.displayName! ]
         attributSet.contentDescription = itemDic["description"] as? String
-        let imageData = (itemDic["cover"] as? UIImage)!.jpegData(compressionQuality: 0.7)
-        attributSet.thumbnailData = imageData
+//        let imageData = (itemDic["cover"] as? UIImage)!.jpegData(compressionQuality: 0.7)
+//        attributSet.thumbnailData = imageData
+        attributSet.thumbnailURL = NSURL(string: "https://img.lanrentuku.com/img/allimg/1711/1511753224214.jpg") as URL?
         
         let searchItem = CSSearchableItem(uniqueIdentifier: "\(indexPath.row)", domainIdentifier: "nimomeng", attributeSet: attributSet)
         let tmpItems = [searchItem]
-        CSSearchableIndex.default().indexSearchableItems(tmpItems) { _ in
+        CSSearchableIndex.default().indexSearchableItems(tmpItems) { (error) in
+            if error != nil {
+                print(error as Any)
+            }
         }
         return cell
     }
